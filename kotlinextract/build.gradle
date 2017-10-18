@@ -5,7 +5,7 @@ group = 'com.github.mapsh'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
 
 
     defaultConfig {
@@ -25,9 +25,18 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    provided 'com.android.support:appcompat-v7:26.1.0'
+    provided "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 repositories {
     mavenCentral()
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: 'file:///Users/mapsh/android/maven/')//本地仓库地址
+        pom.groupId = 'com.github.mapsh'
+        pom.artifactId = 'kotlin-extract'
+        pom.version = '1.0.0'
+    }
 }
