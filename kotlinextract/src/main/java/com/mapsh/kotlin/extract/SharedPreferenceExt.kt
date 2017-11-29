@@ -55,13 +55,13 @@ fun Fragment.sp_clear() = activity.sp_clear()
 /**
  * v4.fragment
  */
-fun android.support.v4.app.Fragment.sp_saveString(key: String, value: String) = activity.sp_saveString(key, value)
+fun android.support.v4.app.Fragment.sp_saveString(key: String, value: String) = activity!!.sp_saveString(key, value)
 
-fun android.support.v4.app.Fragment.sp_saveInt(key: String, value: Int) = activity.sp_saveInt(key, value)
-fun android.support.v4.app.Fragment.sp_saveBool(key: String, value: Boolean) = activity.sp_saveBool(key, value)
-fun android.support.v4.app.Fragment.sp_saveFloat(key: String, value: Float) = activity.sp_saveFloat(key, value)
-fun android.support.v4.app.Fragment.sp_saveLong(key: String, value: Long) = activity.sp_saveLong(key, value)
-fun android.support.v4.app.Fragment.sp_saveObject(key: String, value: Any) = activity.sp_saveObject(key, value)
+fun android.support.v4.app.Fragment.sp_saveInt(key: String, value: Int) = activity!!.sp_saveInt(key, value)
+fun android.support.v4.app.Fragment.sp_saveBool(key: String, value: Boolean) = activity!!.sp_saveBool(key, value)
+fun android.support.v4.app.Fragment.sp_saveFloat(key: String, value: Float) = activity!!.sp_saveFloat(key, value)
+fun android.support.v4.app.Fragment.sp_saveLong(key: String, value: Long) = activity!!.sp_saveLong(key, value)
+fun android.support.v4.app.Fragment.sp_saveObject(key: String, value: Any) = activity!!.sp_saveObject(key, value)
 
 
 fun android.support.v4.app.Fragment.sp_getString(key: String, default: String = ""): String = activity.sp_getString(key, default)

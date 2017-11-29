@@ -35,6 +35,6 @@ fun Fragment._loadColor(@ColorRes id: Int): Int = activity._loadColor(id)
 
 fun Fragment._loadDrawable(@ColorRes id: Int): Drawable = activity._loadDrawable(id)
 
-fun android.support.v4.app.Fragment._loadColor(@ColorRes id: Int): Int = activity._loadColor(id)
+fun android.support.v4.app.Fragment._loadColor(@ColorRes id: Int): Int = activity!!._loadColor(id)
 
-fun android.support.v4.app.Fragment._loadDrawable(@ColorRes id: Int): Drawable = activity._loadDrawable(id)
+fun android.support.v4.app.Fragment._loadDrawable(@ColorRes id: Int): Drawable = activity!!._loadDrawable(id)

@@ -44,10 +44,10 @@ fun Fragment._sp2px(value: Int): Int = activity._sp2px(value)
 
 fun Fragment._px2sp(value: Int): Int = activity._px2sp(value)
 
-fun android.support.v4.app.Fragment._dip2px(value: Int): Int = activity._dip2px(value)
+fun android.support.v4.app.Fragment._dip2px(value: Int): Int = activity?._dip2px(value) ?: 0
 
-fun android.support.v4.app.Fragment._px2dip(value: Int): Int = activity._px2dip(value)
+fun android.support.v4.app.Fragment._px2dip(value: Int): Int = activity?._px2dip(value) ?: 0
 
-fun android.support.v4.app.Fragment._sp2px(value: Int): Int = activity._sp2px(value)
+fun android.support.v4.app.Fragment._sp2px(value: Int): Int = activity?._sp2px(value) ?: 0
 
-fun android.support.v4.app.Fragment._px2sp(value: Int): Int = activity._px2sp(value)
+fun android.support.v4.app.Fragment._px2sp(value: Int): Int = activity?._px2sp(value) ?: 0

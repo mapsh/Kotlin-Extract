@@ -23,7 +23,7 @@ inline fun <reified T : Activity> Fragment._startActivity(vararg params: Pair<St
 inline fun <reified T : Activity> Fragment._startActivityForResult(requestCode: Int, vararg params: Pair<String, Any>) = IntentImpl.startActivityForResult(this, T::class.java, requestCode, params)
 
 
-inline fun <reified T : Activity> android.support.v4.app.Fragment._startActivity(vararg params: Pair<String, Any>) = IntentImpl.startAcivity(activity, T::class.java, params)
+inline fun <reified T : Activity> android.support.v4.app.Fragment._startActivity(vararg params: Pair<String, Any>) = IntentImpl.startAcivity(activity as Activity, T::class.java, params)
 
 
 inline fun <reified T : Activity> android.support.v4.app.Fragment._startActivityForResult(requestCode: Int, vararg params: Pair<String, Any>) = IntentImpl.startActivityForResult(this, T::class.java, requestCode, params)

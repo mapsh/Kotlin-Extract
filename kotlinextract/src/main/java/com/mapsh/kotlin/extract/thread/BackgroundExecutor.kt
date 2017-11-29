@@ -14,13 +14,9 @@ object BackgroundExecutor {
         Executors.newScheduledThreadPool(2 * Runtime.getRuntime().availableProcessors())
     }
 
-
     val handler: Handler by lazy {
         Handler(Looper.getMainLooper())
     }
 
-    fun <T> submit(task: () -> T): Future<T> {
-        return executor.submit(task)
-    }
-
+    fun <T> submit(task: () -> T): Future<T> = executor.submit(task)
 }

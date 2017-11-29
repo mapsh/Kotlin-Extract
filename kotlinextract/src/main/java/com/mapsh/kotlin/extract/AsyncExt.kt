@@ -1,5 +1,6 @@
 package com.mapsh.kotlin.extract
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Fragment
 import android.os.Build
@@ -18,6 +19,7 @@ inline fun _async(crossinline f: () -> Unit) {
     }
 }
 
+@SuppressLint("ObsoleteSdkInt")
 inline fun Activity?._runUI(crossinline f: () -> Unit) {
     if (Thread.currentThread() == Looper.getMainLooper().thread) {
         f()
