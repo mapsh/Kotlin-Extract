@@ -1,4 +1,4 @@
-package com.mapsh.kotlin.extract.impl
+package com.mapsh.kotlinx.extract.impl
 
 import android.annotation.SuppressLint
 import android.app.Activity

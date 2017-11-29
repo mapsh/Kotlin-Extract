@@ -1,4 +1,4 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 import android.app.Activity
 import android.content.Context

@@ -1,6 +1,6 @@
 @file:Suppress("NOTHING_TO_INLINE")
 
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 import android.content.Context
 import android.view.View

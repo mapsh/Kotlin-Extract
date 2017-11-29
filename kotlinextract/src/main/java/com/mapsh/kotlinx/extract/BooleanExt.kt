@@ -1,4 +1,4 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 sealed class BooleanExt<out T> constructor(val boolean: Boolean)
 object Otherwise : BooleanExt<Nothing>(true)

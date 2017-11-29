@@ -1,11 +1,11 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 import android.app.Fragment
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.support.annotation.ColorRes
 import android.view.View
-import com.mapsh.kotlin.extract.impl.CommonImpl
+import com.mapsh.kotlinx.extract.impl.CommonImpl
 
 /**
  * Created by mapsh on 2017/8/17.

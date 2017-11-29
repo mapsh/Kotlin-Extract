@@ -1,6 +1,6 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
-import com.mapsh.kotlin.extract.impl.LogImpl
+import com.mapsh.kotlinx.extract.impl.LogImpl
 import org.json.JSONArray
 import org.json.JSONObject
 

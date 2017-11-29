@@ -1,8 +1,8 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 import android.app.Fragment
 import android.content.Context
-import com.mapsh.kotlin.extract.sp.SharedPreferenceImpl
+import com.mapsh.kotlinx.extract.sp.SharedPreferenceImpl
 
 /**
  * Created by mapsh on 2017/8/17.
@@ -64,15 +64,15 @@ fun android.support.v4.app.Fragment.sp_saveLong(key: String, value: Long) = acti
 fun android.support.v4.app.Fragment.sp_saveObject(key: String, value: Any) = activity!!.sp_saveObject(key, value)
 
 
-fun android.support.v4.app.Fragment.sp_getString(key: String, default: String = ""): String = activity.sp_getString(key, default)
-fun android.support.v4.app.Fragment.sp_getInt(key: String, default: Int = 0): Int = activity.sp_getInt(key, default)
-fun android.support.v4.app.Fragment.sp_getBool(key: String, default: Boolean = false): Boolean = activity.sp_getBool(key, default)
-fun android.support.v4.app.Fragment.sp_getFloat(key: String, default: Float = 0f): Float = activity.sp_getFloat(key, default)
-fun android.support.v4.app.Fragment.sp_getLong(key: String, default: Long = 0L): Long = activity.sp_getLong(key, default)
-fun <T> android.support.v4.app.Fragment.sp_getObject(key: String): T? = activity.sp_getObject(key)
+fun android.support.v4.app.Fragment.sp_getString(key: String, default: String = ""): String = activity!!.sp_getString(key, default)
+fun android.support.v4.app.Fragment.sp_getInt(key: String, default: Int = 0): Int = activity!!.sp_getInt(key, default)
+fun android.support.v4.app.Fragment.sp_getBool(key: String, default: Boolean = false): Boolean = activity!!.sp_getBool(key, default)
+fun android.support.v4.app.Fragment.sp_getFloat(key: String, default: Float = 0f): Float = activity!!.sp_getFloat(key, default)
+fun android.support.v4.app.Fragment.sp_getLong(key: String, default: Long = 0L): Long = activity!!.sp_getLong(key, default)
+fun <T> android.support.v4.app.Fragment.sp_getObject(key: String): T? = activity!!.sp_getObject(key)
 
-fun android.support.v4.app.Fragment.removeIt(key: String) = activity.removeIt(key)
-fun android.support.v4.app.Fragment.sp_clear() = activity.sp_clear()
+fun android.support.v4.app.Fragment.removeIt(key: String) = activity!!.removeIt(key)
+fun android.support.v4.app.Fragment.sp_clear() = activity!!.sp_clear()
 
 
 /**

@@ -1,4 +1,4 @@
-package com.mapsh.kotlin.extract.thread
+package com.mapsh.kotlinx.extract.thread
 
 import android.os.Handler
 import android.os.Looper

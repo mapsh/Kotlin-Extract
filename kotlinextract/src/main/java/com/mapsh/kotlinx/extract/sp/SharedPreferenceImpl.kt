@@ -1,4 +1,4 @@
-package com.mapsh.kotlin.extract.sp
+package com.mapsh.kotlinx.extract.sp
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -23,19 +23,19 @@ object SharedPreferenceImpl {
     }
 
 
-    fun saveBoolean(context: Context, key: String, value: Boolean) = getSP(context).edit().putBoolean(key, value).commit()
+    fun saveBoolean(context: Context, key: String, value: Boolean) = getSP(context).edit().putBoolean(key, value).apply()
 
 
-    fun saveString(context: Context, key: String, value: String) = getSP(context).edit().putString(key, value).commit()
+    fun saveString(context: Context, key: String, value: String) = getSP(context).edit().putString(key, value).apply()
 
 
-    fun saveLong(context: Context, key: String, value: Long) = getSP(context).edit().putLong(key, value).commit()
+    fun saveLong(context: Context, key: String, value: Long) = getSP(context).edit().putLong(key, value).apply()
 
 
-    fun saveInt(context: Context, key: String, value: Int) = getSP(context).edit().putInt(key, value).commit()
+    fun saveInt(context: Context, key: String, value: Int) = getSP(context).edit().putInt(key, value).apply()
 
 
-    fun saveFloat(context: Context, key: String, value: Float) = getSP(context).edit().putFloat(key, value).commit()
+    fun saveFloat(context: Context, key: String, value: Float) = getSP(context).edit().putFloat(key, value).apply()
 
 
     fun getBoolean(context: Context, key: String, default: Boolean = false): Boolean = getSP(context).getBoolean(key, default)

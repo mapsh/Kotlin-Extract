@@ -3,8 +3,7 @@ package com.mapsh.android.kotlinutildemo
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.mapsh.kotlin.extract.*
-import com.livinglifetechway.k4kotlin.showKeyboard
+import com.mapsh.kotlinx.extract.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

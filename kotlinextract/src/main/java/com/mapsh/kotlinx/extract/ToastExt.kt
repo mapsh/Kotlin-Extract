@@ -1,10 +1,10 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 import android.app.Fragment
 import android.content.Context
 import android.view.View
 import android.widget.Toast
-import com.mapsh.kotlin.extract.impl.CommonImpl
+import com.mapsh.kotlinx.extract.impl.CommonImpl
 
 /**
  * Created by mapsh on 2017/8/17.
@@ -37,9 +37,9 @@ fun Fragment._toast(msg: CharSequence) = activity._toast(msg)
 fun Fragment._long_toast(msg: CharSequence) = activity._long_toast(msg)
 
 
-fun android.support.v4.app.Fragment._toast(msg: CharSequence) = activity._toast(msg)
+fun android.support.v4.app.Fragment._toast(msg: CharSequence) = activity!!._toast(msg)
 
 
-fun android.support.v4.app.Fragment._long_toast(msg: CharSequence) = activity._long_toast(msg)
+fun android.support.v4.app.Fragment._long_toast(msg: CharSequence) = activity!!._long_toast(msg)
 
 

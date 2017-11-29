@@ -1,11 +1,11 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 import android.app.Activity
 import android.app.Fragment
 import android.app.Service
 import android.content.Context
 import android.os.Bundle
-import com.mapsh.kotlin.extract.impl.IntentImpl
+import com.mapsh.kotlinx.extract.impl.IntentImpl
 
 /**
  * Created by mapsh on 2017/8/19.

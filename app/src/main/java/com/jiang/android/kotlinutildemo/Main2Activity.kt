@@ -2,7 +2,7 @@ package com.mapsh.android.kotlinutildemo
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.mapsh.kotlin.extract._browse
+import com.mapsh.kotlinx.extract._browse
 import kotlinx.android.synthetic.main.activity_main2.*
 
 /**

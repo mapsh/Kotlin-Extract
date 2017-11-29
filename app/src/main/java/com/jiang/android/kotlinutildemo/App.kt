@@ -1,8 +1,8 @@
 package com.mapsh.android.kotlinutildemo
 
 import android.app.Application
-import com.mapsh.kotlin.extract.impl.LogImpl
-import com.mapsh.kotlin.extract.sp.SharedPreferenceImpl
+import com.mapsh.kotlinx.extract.impl.LogImpl
+import com.mapsh.kotlinx.extract.sp.SharedPreferenceImpl
 
 /**
  * Created by mapsh on 2017/8/17.

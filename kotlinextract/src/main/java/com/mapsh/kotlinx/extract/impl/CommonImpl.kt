@@ -1,4 +1,4 @@
-package com.mapsh.kotlin.extract.impl
+package com.mapsh.kotlinx.extract.impl
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -41,7 +41,7 @@ internal object CommonImpl {
     }
 
     fun loadDrawable(context: Context, @DrawableRes id: Int): Drawable {
-        return ContextCompat.getDrawable(context, id)
+        return ContextCompat.getDrawable(context, id)!!
     }
 
 

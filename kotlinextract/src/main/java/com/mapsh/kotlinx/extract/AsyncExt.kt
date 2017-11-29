@@ -1,11 +1,11 @@
-package com.mapsh.kotlin.extract
+package com.mapsh.kotlinx.extract
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Fragment
 import android.os.Build
 import android.os.Looper
-import com.mapsh.kotlin.extract.thread.BackgroundExecutor
+import com.mapsh.kotlinx.extract.thread.BackgroundExecutor
 import java.util.concurrent.Future
 
 /**
